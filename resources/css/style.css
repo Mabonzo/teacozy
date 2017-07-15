@@ -1,0 +1,159 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+}
+/*Header*/
+header {
+  display: flex;
+  position: fixed;
+  flex-flow: wrap nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  opacity: 0.9;
+  height: 69px;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid seashell;
+}
+#header-logo {
+  height: 50px;
+  padding-left: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: seashell;
+  margin: 13px;
+}
+h2, h4, h3, h5 {
+  margin: 0;
+  padding: 10px 0 10px;
+  opacity: 0.9;
+}
+/*Primary Content Container*/
+.container {
+  display: flex;
+  position: relative;
+  top: 70px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Mission Section*/
+#mission-parent {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 1200px;
+  padding-bottom: 80px;
+}
+.mission-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+  width: inherit;
+}
+.mission-child img {
+  position: absolute;
+  z-index: -10;
+}
+.mission-child h2, .mission-child h4 {
+  background-color: black;
+  width: 100%;
+  opacity: 0.9;
+}
+/*Featured Tea Section*/
+#featured-tea-parent {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  padding-bottom: 80px;
+}
+.featured-tea-child {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.featured-tea-item {
+  display: flex;
+  flex-direction: column;
+}
+.featured-tea-item img {
+  height: 200px;
+  width: 300px;
+  margin: 0 10px 0 10px;
+}
+/*Locations Section*/
+#locations-parent {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 1200px;
+}
+.locations-child {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+.locations-item-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 5px;
+  justify-content: space-between;
+  width: 980px;
+}
+.locations-item {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 280px;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.9;
+}
+.locations-child img {
+  position: absolute;
+  z-index: -10;
+}
+/*Contact Section*/
+#contact-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+/*Footer*/
+footer {
+  display: block;
+  position: relative;
+  left: 20px;
+  bottom: -20px;
+  text-align: left;
+}
